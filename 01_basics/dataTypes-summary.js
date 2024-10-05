@@ -32,4 +32,34 @@ let myObj = {        // objects
 const myFunction = function(){  // Functions
     console.log("HelloWorld");
     
+} 
+
+
+// ******************************** Memory *************************************
+
+// 1: stack(primitive dataType), 2: Heap(NON Primitive dataType) me use hoti h.
+
+  // stack : stack me copy hi milta h.
+let myYoutubeChannel = "UniquePathan";
+let anotherName = myYoutubeChannel;
+anotherName = "kingOfCreater"
+
+
+console.log(myYoutubeChannel);
+console.log(anotherName);
+
+
+    // Heap : heap me refrence hi milta h.
+
+let userOne = {
+    email: "asim@gmail.com", 
+    upi: "user@ybl"
 }
+
+let userTwo = userOne;
+userTwo.email = "khan@gmail.com";
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
+
