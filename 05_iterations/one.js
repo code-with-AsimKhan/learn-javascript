@@ -23,8 +23,8 @@ for(let i = 1; i <= 10; i++) {
 }
 
 let  myArray = ["apple", "orange", "banana"]
-for (let i = 0; i <myArray.length; i++) {
-    const element =myArray[i];
+for (let i = 0; i < myArray.length; i++) {
+    const element = myArray[i];
    // console.log(element);
     
 
