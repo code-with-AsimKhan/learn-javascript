@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: rgb(165, 113, 45); color: black;">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+
+
+    <script src="scriptpract.js"></script>
+</body>
+<script>
+      // ye element ko create karne ka first tarika.
+      //  isme pura tree  teverse karega.
+
+        function addLanguage(langName){
+            const li = document.createElement("li")
+            li.innerText = `${langName}`
+
+            document.querySelector('.language').appendChild(li)
+        }
+
+        addLanguage("python")
+        addLanguage("typeScript")
+
+
+        // ye element ko create karne ka dusra tarika.
+        // isme  direct add kardega, aur tree teverse nahi karega
+
+        function addOptiLanguage(langName){
+            const li = document.createElement('li')
+            li.appendChild(document.createTextNode(langName))
+            document.querySelector('.language').appendChild(li)
+        }
+
+        addOptiLanguage("java")
+
+
+        //***************  Edit  *******************
+
+        const secondLang = document.querySelector("li:nth-child(2)")
+        //secondLang.innerHTML = "Css" // ye first approach
+
+        // second approach
+        const newLi = document.createElement('li')
+        newLi.textContent = "Css"
+        secondLang.replaceWith(newLi)
+
+
+        //edit
+
+        const firstLang = document.querySelector("li:first-child")
+        firstLang.outerHTML = '<li>TypeScript</li>'
+
+
+
+        //remove
+
+        const lastLang = document.querySelector("li:last-child")
+        lastLang.remove()
+</script>
+</html>
