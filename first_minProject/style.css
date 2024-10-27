@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    justify-content: center;
+    text-align: center;
+
+}
+
+
+.button{
+    height: 18vmin;
+    width: 18vmin;
+    
+}
+
+#grey{
+    background-color: grey;
+}
+#white{
+    background-color: green;
+}
+#blue{
+    background-color: blue;
+
+}
+
+#yellow{
+    background-color: yellow;
+}
+
+h1{
+    padding-top: 3rem;
+    margin: 1.5rem;
+
+}
+
+h2{
+    padding-top: 2em;
+}
