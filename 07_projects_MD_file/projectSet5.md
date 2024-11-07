@@ -4,6 +4,9 @@
 [Click here](https://stackblitz.com/edit/dom-project-chaiaurcode?file=index.html)  
 
 
+## ProjectName: Unlimited Colors
+
+
 # Solution code
 
 ## project 5
@@ -93,7 +96,7 @@ body{
     }
   };
 
-  
+
   const stopChangeColor = function(){
     clearInterval(intervalId)
     intervalId = null;
